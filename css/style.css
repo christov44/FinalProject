@@ -1,0 +1,421 @@
+body {
+	width: 100%;
+	height: 1200px;
+	min-width: 1050px;
+	background-color: black;
+	padding: 0px;
+	margin: 0px;
+}
+
+.top_bar { /* header bar */
+	height: 30px;
+	width: 100%; 
+	margin: 0px;
+	background-color: #808080;
+	color: white;
+	font-family: "Times New Roman", serif;
+	font-size: 10px;
+	min-width: 500px;
+	position: fixed;
+}
+
+.left_block { /* creating generic left block for any element that is split in half */
+	display: inline-block;
+	height: 100%;
+	width: 50%;
+	margin: 0px;
+}
+
+.right_block { /* creating generic right block for any element that is split in half */
+	display:inline-block;
+	text-align: right;
+	float: right;
+	height: 100%;
+	width: 50%;
+	margin: 0px;
+}
+
+.helper_container { /* created this so we can vertically center images/text within the parent bars, see http://stackoverflow.com/questions/7273338/how-to-vertically-align-an-image-inside-div for explanation */
+	display: inline-block;
+	height: 100%;
+	vertical-align: middle;
+}
+
+.top_bar .left_block img {
+	height: 15px;
+	padding-left: 5px;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.top_bar .right_block img { /* modifying the social media images sizes */
+	height: 15px;
+	padding-left: 5px;
+	padding-right: 2px;
+	vertical-align: middle;
+}
+
+.top_bar .right_block .linkedin img { /* modifying the height of the linkedin image specifically since it seems to have its own padding */
+	height: 22px;
+	padding-left: 1px;
+	padding-right: 15px;
+}
+
+.top_bar a { /* styling the top_bar's text */
+	font-family: "Times New Roman", serif;
+	font-size: 10px;
+}
+
+.top_bar a:link { /* styling the top_bar's unvisited links */
+	color: white;
+	text-decoration: none;
+}
+
+.top_bar a:visited { /* styling the top_bar's visited links */
+	color: #ff3300;
+}
+
+.top_bar a:hover {  /* styling the top_bar's links when hovered over */
+	text-decoration: underline;
+}
+
+.email {
+	padding-right: 15px;
+}
+
+.filler_bar { /* will sit behind the top_bar but will be invisible to the user*/
+	height: 30px;
+	width: 100%; 
+	margin: 0px;
+	background-color: #808080;
+}
+
+.page_title_bar {
+	width: 100%;
+	height: 8%;
+	margin: 0px;
+	background-color: #99ccff;
+}
+
+.page_title_bar .left_block img { 
+	height: 65px;
+	padding-left: 15px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.page_title_bar .left_block {
+	font-family: Georgia, 'Times New Roman', serif;
+	color: black;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.page_title_bar .right_block {
+	font-family: "Droid Sans", Helvetica, Arial, Verdana, sans-serif;
+	font-size: 15px;
+	vertical-align: middle;
+}
+
+.page_title_bar .right_block nav {
+	z-index: 10;
+	vertical-align: middle;
+	display: inline-block;
+	padding-right: 50px;
+}
+
+.page_title_bar .right_block .navigation_bar ul {
+	list-style: none;
+	padding: 0px;
+}
+
+.page_title_bar .right_block .navigation_bar li {
+	text-transform: uppercase;
+	display: inline;
+	padding-right: 25px;
+}
+
+.page_title_bar .right_block .navigation_bar a:link {
+	text-decoration: none;
+	color: black;
+	font-weight: 900;
+}
+
+.header_bar {
+	height: 10%;
+	color: white;
+	vertical-align: center;
+	text-align: center;
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 50px;
+}
+
+.middle_bar {
+	height: 20%;
+	background-color: #66ff33;
+	margin: 0px 25px 50px 25px;
+}
+
+.middle_bar .left_third_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 33.33%;
+	margin: 0px;
+}
+
+.middle_bar .left_third_block .three_row_block {
+	width: 100%;
+	height: 33.33%;
+	outline: 1px dashed red;
+}
+
+.middle_bar .left_third_block .block_color1 {
+	background-color: gray;
+}
+
+.middle_bar .left_third_block .block_color2 {
+	background-color: blue;
+}
+
+.middle_bar .left_third_block .block_color3 {
+	background-color: orange;
+}
+
+.middle_bar .left_third_block .three_row_block img { 
+	display: inline-block;
+	width: 20%;
+	vertical-align: middle;
+}
+
+.middle_bar .left_third_block .three_row_block .description_text {
+	display: inline-block;
+	width: 70%;
+	padding-left: 20px;
+	vertical-align: middle;
+	line-height: 100%;
+}
+
+.middle_bar .middle_third_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 33.33%;
+	margin: 0px;
+}
+
+.middle_bar .middle_third_block .ski_image img { /* At some point I should come back and figure out how to crop the images instead of squeezing them into the right position */
+	height: 50%;
+	width: 100%;
+}
+
+.middle_bar .middle_third_block .fall_image img {
+	height: 50%;
+	width: 100%;
+}
+
+.middle_bar .right_third_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 33.33%;
+	margin: 0px;
+}
+
+.middle_bar .right_third_block .company_name {
+	width: 100%;
+	height: 45%;
+	text-align: center;
+}
+
+.middle_bar .right_third_block .company_name .logo {
+	width: 100%;
+	text-align: center;
+	font-family: Georgia, 'Times New Roman', serif;
+	color: black;
+	font-weight: bold;
+}
+
+.middle_bar .right_third_block .product_description {
+	width: 100%;
+	height: 55%;
+	text-align: center;
+}
+
+.middle_bar .right_third_block .product_description p {
+	padding-top: 15px;
+	font-size: 18px;
+	margin: 10px;
+}
+
+.middle_bar .right_third_block img {
+	height: 65px;
+	padding: 10px;
+}
+
+.bottom_bar {
+	height: 8%;
+	margin: 0px 25px 50px 25px;
+	background-color: #ffff00;
+}
+
+.bottom_bar .custom_left_block_70p {
+	display: inline-block;
+	float: left;
+	position: relative;
+	height: 100%;
+	width: 70%;
+	margin: 0px;
+}
+
+.bottom_bar .custom_left_block_70p .intro_text {
+	display: block;
+	font-weight: bold;
+	padding: 5px;
+	font-size: 20px;
+}
+
+.bottom_bar .custom_left_block_70p .more_text {
+	display: block;
+	padding: 5px;
+	font-size: 15px;
+}
+
+.bottom_bar .custom_right_block_30p {
+	float: right;
+	height: 100%;
+	width: 30%;
+	margin: 0px;
+	outline: 1px solid right: ;
+}
+
+.bottom_bar .custom_right_block_30p img { /* Probabably should find a better image that takes up more space */
+	display: inline-block;
+	height: 90%;
+	vertical-align: middle;
+	padding-left: 100px;
+}
+
+.more_info {
+	width: 100%;
+	height: 45%;
+	background-color: #ffffcc;
+	margin: 0px;
+}
+
+.more_info .far_left_fourth_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 25%;
+	margin: 0px;
+}
+
+.more_info .far_left_fourth_block h3 {
+	text-align: center;
+}
+
+.more_info .far_left_fourth_block p {
+	font-size: 15px;
+	padding: 15px;
+}
+
+.more_info .middle_left_fourth_block h3 {
+	text-align: center;
+}
+
+.more_info .middle_left_fourth_block ul {
+	padding-top: 15px;
+	font-size: 15px;
+}
+
+.more_info .middle_right_fourth_block h3 {
+	text-align: center;
+}
+
+.more_info .middle_right_fourth_block ul {
+	padding-top: 15px;
+	font-size: 15px;
+}
+
+.more_info .far_right_fourth_block h3 {
+	text-align: center;
+}
+
+.more_info .far_right_fourth_block {
+	width: 80%;
+	text-align: center;
+}
+
+.more_info .middle_left_fourth_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 25%;
+	margin: 0px;
+}
+
+.more_info .middle_right_fourth_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 25%;
+	margin: 0px;
+}
+
+.more_info .far_right_fourth_block {
+	display: inline-block;
+	float: left;
+	height: 100%;
+	width: 25%;
+	margin: 0px;
+}
+
+.footer {
+	width: 100%;
+	height: 11%;
+	background-color: #d9d9d9;
+}
+
+.footer img { 
+	height: 65px;
+	padding-left: 15px;
+	padding-right: 10px;
+	vertical-align: middle;
+}
+
+.footer .trademark {
+	font-family: Georgia, 'Times New Roman', serif;
+	color: black;
+	font-size: 10px;
+	font-weight: 100;
+}
+
+.footer .logo {
+	font-family: Georgia, 'Times New Roman', serif;
+	color: black;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+.footer .top_button {
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 300px;
+	height: 50%;
+}
+
+.about_body_copy {
+	color: white;
+	padding: 20px;
+}
+
+.contact_table table, th, td {
+	padding: 25px;
+    border: 1px solid white;
+    color: white;
+    text-align: center;
+}
+
+
+
