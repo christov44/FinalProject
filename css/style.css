@@ -1,3 +1,31 @@
+
+
+
+@media all and (min-width: 500px) { /* All the stuff for Desktop version */
+
+
+.typed-cursor{
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
 body {
 	width: 100%;
 	height: 1200px;
@@ -75,8 +103,8 @@ body {
 	color: #ff3300;
 }
 
-.top_bar a:hover {  /* styling the top_bar's links when hovered over */
-	text-decoration: underline;
+.top_bar a:hover {  /* styling the top_bar's links when hovered over NOT WORKING */
+	color: white;
 }
 
 .email {
@@ -417,5 +445,12 @@ body {
     text-align: center;
 }
 
+}
 
+
+@media all and (max-width: 500px) { /* All the stuff for Mobile verion */
+	body {
+		background-color: white;
+	}
+}
 
