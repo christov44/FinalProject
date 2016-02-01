@@ -19,7 +19,31 @@ $(function(){
       $(this).css("border", "5px solid red");
   });
 
+  $(".about_body_copy").click(function() {
+    for (i = 0; i < 5; i++) {  
+      $(".about_body_copy").fadeOut(1000);
+      $(".about_body_copy").fadeIn(1000);
+    }
   });
+
+
+//Trying to figure out how to make a button that Shows/Hides it
+//   $("#displayText").click(function toggle() {
+//     var ele = document.getElementById("toggleText");
+//     var text = document.getElementById("displayText");
+//     if(ele.style.display == "block") {
+//           ele.style.display = "none";
+//       text.innerHTML = "Expand";
+//       }
+//     else {
+//       ele.style.display = "block";
+//       text.innerHTML = "About Mayday in Paradise: Our Story (Click Here to hide)";
+//     }
+// });
+
+  });
+
+
 
 
    // $("h1").hide(); // Hides the element. Can also do show().
