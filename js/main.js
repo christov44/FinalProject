@@ -15,6 +15,10 @@ $(function(){
     $(".database").fadeOut(5000);
   });
 
+  $(".contact_table").hover(function() {
+      $(this).css("border", "5px solid red");
+  });
+
   });
 
 
