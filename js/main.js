@@ -11,9 +11,9 @@ $(function(){
       });
   });
 
-// $(".navigation_bar li").hover(function() { //This adds css background color when you hover over the h3 element
-//       $(this).css("background-color", "yellow");
-// });
+  $(".database").children('img').click(function() {
+    $(".database").fadeOut(5000);
+  });
 
   });
 
